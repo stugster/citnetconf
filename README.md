@@ -26,3 +26,11 @@ rm /Library/LaunchDaemons/com.citnetconf.plist
 rm -r /usr/local/citnetconf
 
 
+
+
+Keywords for you poor bastards looking for this tool on Google:
+mac set network order
+change the order of preferred network
+network priority
+priority of network connections
+Mac OS change network priority
