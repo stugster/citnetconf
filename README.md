@@ -9,13 +9,20 @@ The tool pulls all the network devices listed under Apple > System Preferences >
 It then removes Wi-Fi from the list, appending it to the bottom.
 Once it has the new list, it pulls this information back in and runs the following on the device:
 
+
 /usr/sbin/networksetup -ordernetworkservices $servicesList ($servicseList being the list of Devices, ordered with Wi-Fi last).
+
 
 Lastly, the tool also takes advantage of Mac OS's 'launchd' for launching scripts as root on boot. The tool adds itself to run every time the Mac boots.
 
+
 Uninstall:
 
+
 At time of writing, to uninstall simply:
+
 rm /Library/LaunchDaemons/com.citnetconf.plist
+
 rm -r /usr/local/citnetconf
+
 
